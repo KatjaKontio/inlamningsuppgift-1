@@ -1,3 +1,89 @@
-h1 {
-    color: red;
+body {
+    margin: 0;
 }
+
+.menu {
+    background-color: #3bb78f;
+    background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    display:flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 20px;
+    margin: 0;  
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  
+}
+
+
+.border-container {
+
+    border-style: solid;
+    padding: 50px;
+    margin: 60px;
+}
+
+/*Media quieres*/
+@media screen and (min-width: 600px){
+    .topnav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+.menu {
+    display: none;
+}
+    /* Hamburgar-meny*/
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    background:black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .active {
+    color: white;
+    background-color: #3bb78f;
+    background-image: linear-gradient(315deg, #3bb78f 0%, #0bab64 74%);
+  }
+  }
+
